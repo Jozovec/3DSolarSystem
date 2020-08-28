@@ -75,7 +75,7 @@ public class CameraMovement : MonoBehaviour
             position.value += precisePositionSpeed * Time.deltaTime;
         }
 
-        // Q E
+        // Q E X
         if (Input.GetKeyDown(KeyCode.Q))
         {
             animations.triggerControls();
@@ -83,6 +83,10 @@ public class CameraMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             animations.triggerPlanets();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
 
         // Anti collision
